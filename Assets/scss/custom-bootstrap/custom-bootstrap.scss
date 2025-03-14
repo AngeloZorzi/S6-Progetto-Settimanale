@@ -1,0 +1,18 @@
+@import "../functions";
+@import "../variables";
+//nuovi colori
+
+$netflix-1: #efefef;
+$netflix-2: #141414;
+$netflix-3: #7e7e7e;
+$netflix-4: #3f3f3f;
+
+$new-colors: (
+  "netflix-1": $netflix-1,
+  "netflix-2": $netflix-2,
+  "netflix-3": $netflix-3,
+  "netflix-4": $netflix-4,
+);
+
+$theme-colors: map-merge($theme-colors, $new-colors);
+@import "../bootstrap.scss";
