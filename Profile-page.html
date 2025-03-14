@@ -30,16 +30,20 @@
     </header>
     <main>
       <div class="container-fluid py-5 bg-netflix-2">
-        <h1 class="mb-4 text-netflix-1 fw-bold text-center">Edit Profile</h1>
+        <h1
+          class="mb-4 text-netflix-1 ps-3 fw-bold border-1 border-bottom border-netflix-4 w-75 ms-auto me-auto"
+        >
+          Edit Profile
+        </h1>
         <div class="card bg-netflix-2 text-netflix-1 p-4 w-75 ms-auto me-auto">
           <div class="row flex-column flex-md-row">
             <div
-              class="col-12 col-md-2 align-items-md-start text-center mb-3 mb-md-0"
+              class="col-12 col-md-3 align-items-md-start text-center mb-3 mb-md-0"
             >
               <img
                 src="./Assets/img/avatar.png"
                 alt="Profile Icon"
-                class="w-100"
+                class="w-100 img-fluid rounded-0 border border-1 border-netflix-2"
               />
               <button
                 class="btn btn-outline-netflix-4 btn-sm mt-2 d-block mx-auto fs-6"
@@ -47,17 +51,22 @@
                 <i class="bi bi-pencil"></i>
               </button>
             </div>
-            <div class="col-12 col-md-10">
+            <div class="col-12 col-md-9">
               <div class="mb-3">
                 <input
                   type="text"
-                  class="form-control"
-                  value="Strive Student"
+                  class="form-control bg-netflix-4 text-netflix-1"
+                  value=""
+                  placeholder="Click Here to change your name"
                 />
               </div>
-              <div class="mb-3">
-                <label class="form-label">Language:</label>
-                <select class="form-select">
+              <div class="mb-4 bg-netflix-2 text-netflix-1">
+                <label class="form-label bg-netflix-2 text-netflix-1"
+                  >Language:</label
+                >
+                <select
+                  class="form-select bg-netflix-2 text-netflix-1 rounded-0"
+                >
                   <option selected>English</option>
                   <option>Italiano</option>
                   <option>Français</option>
@@ -65,8 +74,8 @@
                   <option>Espaniol</option>
                 </select>
               </div>
-              <div class="mb-3">
-                <label class="form-label">Maturity Settings:</label>
+              <div class="mb-3 border-top border-1 border-netflix-4">
+                <label class="form-label mt-3">Maturity Settings:</label>
                 <button
                   class="btn btn-netflix-4 text-netflix-1 btn-sm fs-6 d-block"
                 >
@@ -76,7 +85,9 @@
                   Show titles of <strong>all maturity ratings</strong> for this
                   profile.
                 </p>
-                <button class="btn btn-outline-netflix-4 btn-sm" disabled>
+                <button
+                  class="btn btn-outline-netflix-4 btn-sm rounded-0 border border-1"
+                >
                   EDIT
                 </button>
               </div>
@@ -95,10 +106,26 @@
                   >
                 </div>
               </div>
-              <div class="mt-4 d-flex flex-column flex-md-row gap-2">
-                <button class="btn btn-netflix-1">SAVE</button>
-                <button class="btn btn-outline-netflix-4">CANCEL</button>
-                <button class="btn btn-outline-danger">DELETE PROFILE</button>
+              <div
+                class="mt-4 d-flex flex-column flex-md-row gap-md-5 border-top border-1 border-netflix-4"
+              >
+                <button
+                  class="btn btn-outline-netflix-3 mt-4 mt-md-4 flex-grow-0 rounded-0 border border-2"
+                  onclick="alert('Your changes have been saved succefully!')"
+                >
+                  SAVE
+                </button>
+                <button
+                  class="btn btn-outline-netflix-3 mt-2 mt-md-4 flex-grow-1 rounded-0 border border-2"
+                >
+                  CANCEL
+                </button>
+                <button
+                  class="btn btn-outline-netflix-3 mt-2 mt-md-4 flex-grow-1 rounded-0 border border-2"
+                  onclick="alert('Are You Sure?')"
+                >
+                  DELETE PROFILE
+                </button>
               </div>
             </div>
           </div>
